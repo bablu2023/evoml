@@ -191,36 +191,73 @@ Facebook: 		https://www.facebook.com/fh5co
   border-radius: 5%;
   margin: 0.5rem;
 }
+/* Container for PDF and controls */
 #pdf-container {
-      text-align: center;
-    }
-    canvas {
-      border: 1px solid #ccc;
-      margin-bottom: 10px;
-      max-width: 85%;
-	    height: 600px;
-    }
-    #controls {
-      margin-top: 10px;
-    }
-    button {
-      padding: 0.5rem 1rem;
-      margin: 0 10px;
-      font-size: 1rem;
-    }
-#pdf-container {
-      text-align: center;
-      margin: 10px;
-    }
-    #pdf-render {
-      width: 80%;
-      
-      border: 1px solid #ccc;
-	    height: auto;
-    }
-    #controls {
-      margin-top: 10px;
-    }
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* PDF canvas */
+canvas {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 90%;
+  height: 600px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+canvas:hover {
+  transform: scale(1.01);
+}
+
+/* Controls container */
+#controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 123, 255, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #00408d;
+}
+
+/* PDF render container */
+#pdf-render {
+  width: 85%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: auto;
+  margin: 0 auto;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
 
 </style>
 <body>
