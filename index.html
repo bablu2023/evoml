@@ -190,78 +190,25 @@ Facebook: 		https://www.facebook.com/fh5co
   border-radius: 5%;
   margin: 0.5rem;
 }
-/* === Base Navbar Container === */
+/* === Navbar Background === */
 #evoml-header {
   background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  line-height: 1.6;
 }
 
-/* === Navbar Wrapper === */
-#evoml-header .navbar {
-  padding: 1.2rem 2rem; /* increased height */
-}
-
-/* === Brand Title === */
+/* === Brand Title Color === */
 #evoml-header .navbar-brand h3 {
-  font-size: 2rem; /* larger site title */
-  font-weight: 700;
-  margin: 0;
-  color: #2c3e50;
-  line-height: 1.4;
+  color: #003366; /* dark blue */
 }
 
-/* === Navbar Items === */
+/* === Navbar Links === */
 #evoml-header .nav-link {
-  font-size: 1.25rem;  /* larger nav items */
-  font-weight: 600;
-  color: #333;
-  padding: 1rem 1.5rem;
-  line-height: 1.8;
-  transition: color 0.2s ease-in-out;
+  color: #444444; /* grayish text */
 }
 
-/* === Hover/Active States === */
+/* === Hover & Active Link Colors === */
 #evoml-header .nav-link:hover,
 #evoml-header .nav-link.active {
-  color: #007bff;
-  text-decoration: underline;
-}
-
-/* === Mobile Responsive === */
-@media (max-width: 768px) {
-  #evoml-header .navbar {
-    padding: 0.75rem 1rem;
-  }
-
-  #evoml-header .navbar-brand h3 {
-    font-size: 1.5rem;
-  }
-
-  #evoml-header .nav-link {
-    font-size: 1.1rem;
-    padding: 0.5rem 1rem;
-  }
-}
-
-/* === Optional: Dark Mode === */
-@media (prefers-color-scheme: dark) {
-  #evoml-header {
-    background-color: #1c1c1c;
-  }
-
-  #evoml-header .navbar-brand h3,
-  #evoml-header .nav-link {
-    color: #eee;
-  }
-
-  #evoml-header .nav-link:hover {
-    color: #00aced;
-  }
+  color: #0066cc; /* brighter blue on hover */
 }
 
 </style>
