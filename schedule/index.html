@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<!-- Mirrored from events.csa.iisc.ac.in/rlworkshop2025/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 08:36:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Conference 2025 </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Free HTML5 Template by FreeHTML5.co" />
+<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+<meta name="author" content="FreeHTML5.co" />
+
+<!-- 
+//////////////////////////////////////////////////////
+
+FREE HTML5 TEMPLATE 
+DESIGNED & DEVELOPED by FREEHTML5.CO
+	
+Website: 		http://freehtml5.co/
+Email: 			info@freehtml5.co
+Twitter: 		http://twitter.com/fh5co
+Facebook: 		https://www.facebook.com/fh5co
+
+//////////////////////////////////////////////////////
+ -->
+
+<!-- Facebook and Twitter integration -->
+<meta property="og:title" content=""/>
+<meta property="og:image" content=""/>
+<meta property="og:url" content=""/>
+<meta property="og:site_name" content=""/>
+<meta property="og:description" content=""/>
+<meta name="twitter:title" content="" />
+<meta name="twitter:image" content="" />
+<meta name="twitter:url" content="" />
+<meta name="twitter:card" content="" />
+
+<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+<link rel="shortcut icon" href="favicon.html">
+
+<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Icomoon Icon Fonts-->
+<link rel="stylesheet" href="css/icomoon.css">
+<!-- Simple Line Icons -->
+<link rel="stylesheet" href="css/simple-line-icons.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<!-- Owl Carousel  -->
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<!-- Style -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="w_files/wks.u.css">
+<link rel="stylesheet" type="text/css" href="css/responsive.dataTables.min.css">
+
+
+<!-- Modernizr JS -->
+<script src="js/modernizr-2.6.2.min.js"></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<script>
+    function showAbst(name){
+        $.get('w_files/' + name + '.html?t=' + Date.now(), function(data){
+            $('#pdfview article').html(data)
+            $('#pdfview').show()
+            $('#pdfview article').focus()
+            $("#pdfview").scrollTop(0)
+        })
+    }
+    
+    function showChps(){
+        $('.msg_chp').html('')
+        $('.msg_chp').hide()
+        $('#pssview').show()
+        $('#pssview').focus()
+    }
+
+</script>
+
+</head>
+<style>
+	 .container {
+      width: 90%;
+      
+      margin: auto;
+	  background-color: #fff;
+    }
+    h1, h2 {
+      color: #00274d;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #00274d;
+    }
+	.speakers-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .speaker-card {
+      background: #f2f2f2;
+      width: 320px;
+      height: 480px;
+      border-radius: 8px;
+      text-align: center;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .speaker-card img {
+      width: 320px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .speaker-card h3 {
+      margin: 0.2rem 0 0.1rem;
+      font-size: 1.5rem;
+	  color: black;
+	  font-weight:bold ;
+    }
+    .speaker-card p {
+      margin: 0;
+      font-size: 1.5rem;
+	  color: rgb(46, 45, 45)
+	  font-weight: bold;
+    }
+	#department-card .department-card {
+  background-color: #fff;
+  border: 2px solid #1c7ed6;
+  width: 500px;
+  height: 320px; 
+}
+
+#faculty-cards .faculty-card {
+  background-color: #f0f8ff;
+  border: 2px solid #3a7ca5;
+}
+
+#student-cards .student-card {
+  background-color: #fff;
+  border: 2px solid #3a7ca5;
+  width: 250px;
+  height: 300px;
+  
+}
+
+.speakers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  
+  
+}
+
+.profile-card {
+  width: 220px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  width: 140px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 0.5rem;
+}
+#pdf-container {
+      text-align: center;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+    #controls {
+      margin-top: 10px;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+
+</style>
+<body>
+<header role="banner" id="fh5co-header">
+	<div class="fluid-container">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<! Mobile Toggle Menu Button >
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<h3 class="logo">Summer School on EVOML</h3>
+				<!-- <img class="logo" src="w_files/IISc_Master_Logo.jpg">  -->
+				<a class="navbar-brand" href="index-2.html">  </a> 
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#" data-nav-section=""><span>About</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Registration</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Schedule</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Poster</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Accomodation</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Live</span></a></li>
+                    
+
+			</div>
+            <!-- <div class="social shadow" style="width: 35px; height: 35px; position: fixed; top: 13px; right: 15px; z-index: 1000;">
+                
+            </div> -->
+		</nav>
+  </div>
+</header>
+
+<img src="w_files/header1.png" style="width: 100%; margin: auto; display: block; height: 400px">
+
+<main class="container" style="width: 95%;">
+	
+    <section id="about">
+      <h2>About</h2>
+	  <p style="text-align: justify;">The <strong>"Evolutionary Algorithms and Machine Learning: Theory and Applications"</strong> 
+		summer school offers a comprehensive and intensive exploration of the intersection 
+		between <strong> evolutionary algorithms (EAs)</strong> and <strong>machine learning (ML)</strong>. This program is 
+		designed to provide participants with both theoretical foundations and practical 
+		insights into how evolutionary strategies can enhance machine 
+		learning models and vice versa. Participants will delve into the principles of 
+		evolutionary algorithms, including genetic algorithms, genetic programming, and
+		 other optimization techniques that draw inspiration from natural evolution. 
+		 The program covers how these algorithms can be used to solve complex optimization 
+		 problems, optimize neural networks, or even evolve new machine learning models. 
+		 Furthermore, the summer school incorporates hands-on sessions where attendees will 
+		 apply these concepts in real- world scenarios, such as optimizing hyper parameters in ML models, 
+		 designing adaptive learning systems, or tackling large-scale computational problems. Leading experts 
+		 in the field will share their research and experiences, offering valuable perspectives on both the 
+		 challenges and breakthroughs in this rapidly evolving dom
+		 ain. The summer school aims to foster a collaborative learning environment, where participants can
+		  engage in discussions, work on projects, and gain insights into the latest trends 
+		and future directions of research at the intersection of evolutionary algorithms and machine learning.</p>
+      <p><strong>When?</strong>  16th June 2025 – 20th  June 2025</p>
+      <p><strong>Where?</strong>  Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India.</p>
+    </section>
+
+    
+ <div id="pdf-container">
+  <canvas id="pdf-render"></canvas>
+  <div id="controls">
+    <button id="prev-page">Previous</button>
+    <span>Page: <span id="page-num">1</span> / <span id="page-count">?</span></span>
+    <button id="next-page">Next</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
+<script>
+  const url = 'pdfs/schedule.pdf'; // Make sure this file exists
+
+  // Set worker source
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+
+  let pdfDoc = null,
+      pageNum = 1,
+      canvas = document.getElementById('pdf-render'),
+      ctx = canvas.getContext('2d');
+
+  function renderPage(num) {
+    pdfDoc.getPage(num).then(function (page) {
+      const viewport = page.getViewport({ scale: 1.5 });
+      canvas.height = viewport.height;
+      canvas.width = viewport.width;
+
+      const renderContext = {
+        canvasContext: ctx,
+        viewport: viewport
+      };
+      page.render(renderContext).promise.then(function () {
+        document.getElementById('page-num').textContent = num;
+      });
+    });
+  }
+
+  // Load PDF
+  pdfjsLib.getDocument(url).promise.then(function (pdfDoc_) {
+    pdfDoc = pdfDoc_;
+    document.getElementById('page-count').textContent = pdfDoc.numPages;
+    renderPage(pageNum);
+  });
+
+  // Controls
+  document.getElementById('next-page').addEventListener('click', function () {
+    if (pageNum >= pdfDoc.numPages) return;
+    pageNum++;
+    renderPage(pageNum);
+  });
+
+  document.getElementById('prev-page').addEventListener('click', function () {
+    if (pageNum <= 1) return;
+    pageNum--;
+    renderPage(pageNum);
+  });
+</script>
+
+
+</body>
+</html>
