@@ -257,6 +257,27 @@ button:active {
   margin: 0 auto;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
+.download-btn {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(40, 167, 69, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-btn:hover {
+  background-color: #1e7e34;
+  transform: translateY(-2px);
+}
+
+.download-btn:active {
+  background-color: #155724;
+}
 
 
 </style>
@@ -323,6 +344,7 @@ button:active {
   </style>
 
   <div id="pdf-container">
+<a href="path/to/your.pdf" download class="download-btn">Download PDF</a>
     <canvas id="pdf-render"></canvas>
     <div id="controls">
       <button id="prev-page">Previous</button>
