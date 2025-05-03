@@ -190,6 +190,54 @@ Facebook: 		https://www.facebook.com/fh5co
   border-radius: 5%;
   margin: 0.5rem;
 }
+/* Navbar Styles */
+#evoml-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#evoml-header .navbar {
+  padding: 0.75rem 1rem;
+}
+
+#evoml-header .navbar-brand h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+#evoml-header .nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #2c3e50;
+  transition: color 0.3s;
+}
+
+#evoml-header .nav-link:hover,
+#evoml-header .nav-link.active {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Responsive tweak for mobile nav button */
+.navbar-toggler {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Smooth transition */
+.collapse.navbar-collapse {
+  transition: all 0.3s ease-in-out;
+}
 
 </style>
 <body>
