@@ -591,6 +591,31 @@ Facebook: 		https://www.facebook.com/fh5co
 <script type="text/javascript" src="js/dataTables.responsive.min.js"></script>
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('a[data-nav-section]');
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        if (this.classList.contains('clicked')) {
+          // Prevent further clicks
+          e.preventDefault();
+          return;
+        }
+
+        // First click - allow action
+        this.classList.add('clicked');
+
+        // Optional: Add a visual cue
+        this.style.pointerEvents = 'none';
+        this.style.opacity = '0.6';
+
+        // Your navigation logic here if needed
+        // For example: scroll to section, load content, etc.
+      });
+    });
+  });
+</script>
 
 
 </body>
