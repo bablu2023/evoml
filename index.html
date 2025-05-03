@@ -238,6 +238,88 @@ Facebook: 		https://www.facebook.com/fh5co
 .collapse.navbar-collapse {
   transition: all 0.3s ease-in-out;
 }
+/* === Base Navbar Container === */
+#evoml-header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* === Brand Title === */
+#evoml-header .navbar-brand h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #2c3e50;
+  white-space: nowrap;
+}
+
+#evoml-header .navbar-brand h3:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* === Navbar Item Styling === */
+#evoml-header .nav-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  padding: 0.5rem 1rem;
+  transition: color 0.2s ease-in-out;
+}
+
+#evoml-header .nav-link:hover,
+#evoml-header .nav-link.active {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* === Toggle Button Customization === */
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* === Collapse Animation === */
+.navbar-collapse {
+  transition: height 0.3s ease-in-out;
+}
+
+/* === Mobile Adjustments === */
+@media (max-width: 768px) {
+  #evoml-header .navbar {
+    padding: 0.5rem 1rem;
+  }
+  #evoml-header .navbar-nav {
+    padding-top: 0.75rem;
+  }
+  #evoml-header .nav-link {
+    padding: 0.5rem;
+  }
+}
+
+/* === Optional: Dark Mode Support === */
+@media (prefers-color-scheme: dark) {
+  #evoml-header {
+    background-color: #1c1c1c;
+    box-shadow: none;
+  }
+  #evoml-header .navbar-brand h3,
+  #evoml-header .nav-link {
+    color: #eee;
+  }
+  #evoml-header .nav-link:hover {
+    color: #00aced;
+  }
+}
 
 </style>
 <body>
