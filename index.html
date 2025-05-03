@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<!-- Mirrored from events.csa.iisc.ac.in/rlworkshop2025/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 26 Apr 2025 08:36:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -190,234 +192,152 @@ Facebook: 		https://www.facebook.com/fh5co
   border-radius: 5%;
   margin: 0.5rem;
 }
-/* === Navbar Background === */
-#evoml-header {
+#pdf-container {
+      text-align: center;
+    }
+    canvas {
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+      max-width: 100%;
+    }
+    #controls {
+      margin-top: 10px;
+    }
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0 10px;
+      font-size: 1rem;
+    }
+ .container {
+      width: 90%;
+      
+      margin: auto;
+	  background-color: #fff;
+    }
+    h1, h2 {
+      color: #00274d;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #00274d;
+    }
+	.speakers-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .speaker-card {
+      background: #f2f2f2;
+      width: 320px;
+      height: 480px;
+      border-radius: 8px;
+      text-align: center;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .speaker-card img {
+      width: 320px;
+      height: 450px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+    }
+    .speaker-card h3 {
+      margin: 0.2rem 0 0.1rem;
+      font-size: 1.5rem;
+	  color: black;
+	  font-weight:bold ;
+    }
+    .speaker-card p {
+      margin: 0;
+      font-size: 1.5rem;
+	  color: rgb(46, 45, 45)
+	  font-weight: bold;
+    }
+	#department-card .department-card {
   background-color: #fff;
+  border: 2px solid #1c7ed6;
+  width: 500px;
+  height: 320px; 
 }
 
-/* === Brand Title Color === */
-#evoml-header .navbar-brand h3 {
-  color: #003366; /* dark blue */
+#faculty-cards .faculty-card {
+  background-color: #f0f8ff;
+  border: 2px solid #3a7ca5;
 }
 
-/* === Navbar Links === */
-#evoml-header .nav-link {
-  color: #444444; /* grayish text */
-}
-
-/* === Hover & Active Link Colors === */
-#evoml-header .nav-link:hover,
-#evoml-header .nav-link.active {
-  color: #0066cc; /* brighter blue on hover */
-}
-/* === Base font color for the entire page === */
-body {
-  color: #2c3e50; /* dark slate */
-}
-
-/* === Headings === */
-h1, h2, h3, h4, h5, h6 {
-  color: #1a1a1a; /* near black for emphasis */
-}
-
-/* === Navbar Brand and Links === */
-#evoml-header .navbar-brand h3 {
-  color: #003366; /* navy blue for brand */
-}
-
-#evoml-header .nav-link {
-  color: #333333; /* dark gray for links */
-}
-
-#evoml-header .nav-link:hover,
-#evoml-header .nav-link.active {
-  color: #007bff; /* bright blue on hover/active */
-}
-
-/* === Footer and other text (if applicable) === */
-footer, .footer-text, .footer a {
-  color: #555555; /* slightly lighter gray */
-}
-/* Navbar Fixed */
-#fh5co-header.navbar-fixed-top {
-  position: fixed !important;
-  background: #fff;
-  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.1);
-  margin-top: 0px;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
-
-#fh5co-header.navbar-fixed-top .navbar-brand {
-  color: #535659;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li a {
-  transition: 0.3s;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li a:hover {
-  color: #FA5555;
-}
-
-/* Active Link */
-@media screen and (max-width: 992px) {
-  #fh5co-header.navbar-fixed-top #navbar li a {
-    font-size: 20px;
-  }
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.active a {
-  color: #FA5555 !important;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-header.navbar-fixed-top #navbar li.active a {
-    color: #FA5555 !important;
-  }
-}
-
-/* Active Link Span */
-#fh5co-header.navbar-fixed-top #navbar li.active a span:before {
-  visibility: visible;
-  transform: scaleX(1);
-  background-color: #FA5555;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-header.navbar-fixed-top #navbar li.active a span:before {
-    background-color: transparent;
-  }
-}
-
-/* Call to Action */
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a {
-  border: 2px solid #FA5555;
-  padding: 5px 10px 3px 10px;
-  margin: 12px 0 0 0;
-  color: gray;
-  border-radius: 30px;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a:hover {
-  background-color: #FA5555;
-  color: #fff !important;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.sign-up {
-  border: 2px solid #00ADB5;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.sign-up:hover {
-  background: #00ADB5;
-  color: #fff;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in {
-  border: 2px solid #FA5555;
-}
-
-#fh5co-header.navbar-fixed-top #navbar li.call-to-action a.log-in:hover {
-  background: #FA5555;
-  color: #fff;
-}
-
-/* Navbar Default */
-#fh5co-header .navbar-default {
-  border: transparent;
-  background: #fff;
-  margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  border-radius: 0px;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  #fh5co-header .navbar-default {
-    margin-top: 0px;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-}
-
-/* Home Section */
-#fh5co-home {
-  background-image: url('../images/image7.jpg');
-  background-size: 100%, 60%;
-  background-repeat: no-repeat;
-  background-position: 0px 25px;
-  background-attachment: fixed;
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-color: #60b6c5;
-  color: #fff;
-}
-
-/* Navbar Toggle (for mobile view) */
-.navbar-toggle {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .navbar-toggle {
-    display: block;
-  }
+#student-cards .student-card {
+  background-color: #fff;
+  border: 2px solid #3a7ca5;
+  width: 250px;
+  height: 300px;
   
-  .navbar-collapse {
-    display: none;
-  }
-
-  .navbar-toggle:checked + .navbar-collapse {
-    display: block;
-  }
 }
 
+.speakers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  
+  
+}
+
+.profile-card {
+  width: 220px;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card img {
+  width: 140px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 5%;
+  margin: 0.5rem;
+}
 </style>
 <body>
-<!-- Include Bootstrap CSS (v4 or v5) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+<header role="banner" id="fh5co-header">
+	<div class="fluid-container">
+		<nav class="navbar navbar-default">
+			<div class="navbar-header">
+				<! Mobile Toggle Menu Button >
+				<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+				<h3 class="logo">Summer School on EVOML</h3>
+				<!-- <img class="logo" src="w_files/IISc_Master_Logo.jpg">  -->
+				<a class="navbar-brand" href="index-2.html">  </a> 
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#" data-nav-section=""><span>About</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Registration</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Schedule</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Poster</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Accomodation</span></a></li>
+					<li><a href="#" data-nav-section=""><span>Live</span></a></li>
+                    
 
-<header role="banner" id="evoml-header" class="bg-light border-bottom shadow-sm">
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand fw-bold" href="index.html">
-        <h3 class="mb-0">Summer School on EVOML</h3>
-      </a>
-      <!-- Mobile toggle button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#evomlNavbar" aria-controls="evomlNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="evomlNavbar">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#" data-nav-section="home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-nav-section="speakers">Speakers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="evoml/schedule/" data-nav-section="">Schedule</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-nav-section="organizers">Organizers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-nav-section="links">About Event</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+			</div>
+            <!-- <div class="social shadow" style="width: 35px; height: 35px; position: fixed; top: 13px; right: 15px; z-index: 1000;">
+                
+            </div> -->
+		</nav>
   </div>
 </header>
-
-<!-- Include Bootstrap JS for responsive toggle -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 <img src="w_files/header1.png" style="width: 100%; margin: auto; display: block; height: 400px">
 
@@ -446,7 +366,6 @@ footer, .footer-text, .footer a {
       <p><strong>When?</strong>  16th June 2025 – 20th  June 2025</p>
       <p><strong>Where?</strong>  Dr B R Ambedkar National Institute of Technology Jalandhar, Punjab, India.</p>
     </section>
-
     <section id="keynote">
 		<h2>Keynote Speakers</h2>
 		
